@@ -90,23 +90,15 @@ class List  extends Component{
           data
         })
     }else if(subadd=="修改"){
-      const data=this.state.data.map((item)=>{
-        if(item.key==this.state.only){
-          return {
-            key:item.key,
-            name: Name,
-            age:Number(age),
-            address: address,
-          }
-        }else{
-          return {
-            key:item.key,
-            name: item.name,
-            age:item.age,
-            address: item.address,
-          }
+      const data=[...this.state.data]
+      for(let i=0;i<data.length;i++){
+        if(data[i].key==this.state.only){
+          data[i].key=data[i].key;
+          data[i].name= Name;
+          data[i].age=Number(age);
+          data[i].address= address;
         }
-      })
+      }
       console.log("修改列表",data);
       this.setState({
         data
