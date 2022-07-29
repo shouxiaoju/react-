@@ -1,0 +1,25 @@
+.theme{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    border: 1px solid grey;
+    margin: 10px;
+}
+.theme_left{
+    box-sizing: border-box;
+    padding: 10px;
+}
+.theme_right{
+    width: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.theme_right button{
+    width: 60px;
+    height: 30px;
+}

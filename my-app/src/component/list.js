@@ -91,6 +91,7 @@ class List  extends Component{
         })
     }else if(subadd=="修改"){
       const data=[...this.state.data]
+     // console.log('修改前',this.state.data);
       for(let i=0;i<data.length;i++){
         if(data[i].key==this.state.only){
           data[i].key=data[i].key;
